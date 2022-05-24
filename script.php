@@ -14,7 +14,7 @@ foreach (file($argv[1]) as $line) {
     $url = $parts[6];
 
     if (!in_array($url, $urls)) {
-        array_push($urls, $url);
+        $urls[] = $url;
     }
 
     if ($status == 200) {
